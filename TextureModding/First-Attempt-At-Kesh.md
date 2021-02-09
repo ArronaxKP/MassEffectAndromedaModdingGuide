@@ -2,7 +2,7 @@
 
 Mass Effect Andromeda allows you to tweak colours without having to create texture which makes simple re-colours very quick and easy. You do this by tweaking.
 
-A Youtube guide on doing this is here:  [Youtube - Frosty Editor - Mass Effect Andromeda - Editing Outfit Colours via EBX edit within the Editor](https://www.youtube.com/watch?v=oDTSRM9yw3w)
+A YouTube guide on doing this is here:  [YouTube - Frosty Editor - Mass Effect Andromeda - Editing Outfit Colours via EBX edit within the Editor](https://www.youtube.com/watch?v=oDTSRM9yw3w)
 
 ## My Attempt 1 - wrong but helpful
 
@@ -58,7 +58,7 @@ Broke down the name is:
 * ambappearancepreset - Appearance Preset - so look in appearancepresentitem
 * global - The location, also kar, nex, rem, etc
 * arkcon - Something to do with the ark
-* superintendent - Kesh likely wasn't named Kesh originally, so she is the "superindendent" of the Nexus
+* superintendent - Kesh likely wasn't named Kesh originally, so she is the "superintendent" of the Nexus
 * kom_und - Krogan, the M or F seems to point to M is body, F is head
 * model_simpleitem - model simple item
 * 1047008620 - identifier (very important)
@@ -87,7 +87,7 @@ So first look in
 * Open - ambappearancepreset_global_arkcon_superintendent_kom_und_model_simpleitem_1047008620
 * Now on the top bar, click on View Instances
 * Select the instance that has colour options. In Kesh's case it was the 3rd option
-  + If you are not sure, check each instance until you find the one that lists Tint_Color_A, B, C
-  + There are a few that has more than one instance with colours, for those then it will be a trial and error
+  * If you are not sure, check each instance until you find the one that lists Tint_Color_A, B, C
+  * There are a few that has more than one instance with colours, for those then it will be a trial and error
 * Change the values of Tint_Color_A, B and C to my green.
 * Create the mod and Viola, Kesh is now a shade of green.

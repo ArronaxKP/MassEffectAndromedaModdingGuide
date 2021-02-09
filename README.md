@@ -8,4 +8,4 @@ Hub Page for my modding Journey. This is my dumping area on how I learnt how to 
 ## Useful Additional Resources
 
 * The discord channels - [Basics - where to start](Basics/README.md)
-* Muchyfly's Site - has Character Creation sheets and some other useful materials - https://munchyfly.carrd.co/
+* [Munchyfly's Site](https://munchyfly.carrd.co/) - has Character Creation sheets and some other useful materials
