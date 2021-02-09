@@ -33,7 +33,7 @@ The main ones that change colour are:
 
 The preview changed!
 
-  ![Green Kesh in Preview](images/green-kesh.png)
+![Green Kesh in Preview](images/green-kesh.png)
 
 I am successful, I thought. So I saved the project, exported it as a mod, then viola it was working... **no**.
 
@@ -76,18 +76,18 @@ This time I was told the same thing but this time with a few more pieces of info
 I needed to edit the appearance preset, not the model. I was modifying the model directly, which makes sense when I need to modify the model. But I actually want to modify the colour template (the preset)
 
 So first to find the preset. Remember the name of the variant:
+
 * ambappearancepreset_global_arkcon_superintendent_kom_und_model_simpleitem_1047008620
 
 So first look in
+
 * appearancepresetitem - this is a HUGE file list and Frosty really could do with a filter option to make this much easier to look through
 * You will see several entries similar to what you are looking for, but you want to edi the one with the exact name match:
-
   ![Kesh List](images/ambappearancepreset-kesh-list.png)
-
 * Open - ambappearancepreset_global_arkcon_superintendent_kom_und_model_simpleitem_1047008620
 * Now on the top bar, click on View Instances
 * Select the instance that has colour options. In Kesh's case it was the 3rd option
-  * If you are not sure, check each instance until you find the one that lists Tint_Color_A, B, C
-  * There are a few that has more than one instance with colours, for those then it will be a trial and error
+  + If you are not sure, check each instance until you find the one that lists Tint_Color_A, B, C
+  + There are a few that has more than one instance with colours, for those then it will be a trial and error
 * Change the values of Tint_Color_A, B and C to my green.
 * Create the mod and Viola, Kesh is now a shade of green.
