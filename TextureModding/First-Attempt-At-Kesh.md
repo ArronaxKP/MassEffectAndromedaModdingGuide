@@ -86,6 +86,8 @@ So first look in
 
 * Open - ambappearancepreset_global_arkcon_superintendent_kom_und_model_simpleitem_1047008620
 * Now on the top bar, click on View Instances
-* Select the 3rd option - why the third one??
+* Select the instance that has colour options. In Kesh's case it was the 3rd option
+  * If you are not sure, check each instance until you find the one that lists Tint_Color_A, B, C
+  * There are a few that has more than one instance with colours, for those then it will be a trial and error
 * Change the values of Tint_Color_A, B and C to my green.
 * Create the mod and Viola, Kesh is now a shade of green.
