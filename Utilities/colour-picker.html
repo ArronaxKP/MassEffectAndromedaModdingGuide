@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Picker Tool</title>
+  </head>
+  <body>
+    <div>
+      <h1>Colour Picker</h1>
+      <input type="color" id="colorPicker" name="colorPicker" value="#000000" />- -<button onclick="reset()">RESET</button>
+      <div id="panel" style="height: 100px; width: 100px; background-color: #000000" ></div>
+      <p>HEX: <input type="text" id="hex" value="#000000" /><button onclick="reCalcHex()">Update</button></p>
+      <p>RGB: <input type="text" id="r" value="0" size="1" /><input type="text" id="g" value="0" size="1" /><input type="text" id="b" value="0" size="1" /><button onclick="reCalcRGB()">Update</button></p>
+      <p>MEA: <input type="text" id="mear" value="0.000000" size="4" /><input type="text" id="meag" value="0.000000" size="4" /><input type="text" id="meab" value="0.000000" size="4" /><button onclick="reCalcMEA()">Update</button></p>
+      <script>
+        function reset() {
+          document.getElementById('hex').value = "#000000";
+          document.getElementById('colorPicker').value = "#000000";
+          document.getElementById('panel').style.backgroundColor = "#000000";
+          document.getElementById('r').value = "0";
+          document.getElementById('g').value = "0";
+          document.getElementById('b').value = "0";
+          document.getElementById('mear').value = "0.000000";
+          document.getElementById('meag').value = "0.000000";
+          document.getElementById('meab').value = "0.000000";
+
+        }
+        /*
+         * Colour Picker Code - updates other inputs with correct values
+         */
+        colorPicker = document.getElementById('colorPicker');
+        // Real-time update
+        colorPicker.addEventListener("input",  watchColorPicker, false);
+        colorPicker.addEventListener("change", watchColorPicker, false);
+        function watchColorPicker(event) {
+          hexColor=document.getElementById('colorPicker').value;
+          document.getElementById('hex').value = hexColor;
+          document.getElementById('panel').style.backgroundColor = hexColor;
+          r = parseInt(hexColor.substr(1,2), 16);
+          g = parseInt(hexColor.substr(3,2), 16);
+          b = parseInt(hexColor.substr(5,2), 16);
+          document.getElementById('r').value = r;
+          document.getElementById('g').value = g;
+          document.getElementById('b').value = b;
+          mear = (r/255).toFixed(6);
+          meag = (g/255).toFixed(6);
+          meab = (b/255).toFixed(6);
+          document.getElementById('mear').value = mear;
+          document.getElementById('meag').value = meag;
+          document.getElementById('meab').value = meab;
+        }
+        /*
+         * HEX Input Code - updates other fields/colour picker
+         */
+        function reCalcHex() {
+          hexColor=document.getElementById('hex').value;
+          document.getElementById('panel').style.backgroundColor = hexColor;
+          document.getElementById('colorPicker').value = hexColor;
+          r = parseInt(hexColor.substr(1,2), 16);
+          g = parseInt(hexColor.substr(3,2), 16);
+          b = parseInt(hexColor.substr(5,2), 16);
+          document.getElementById('r').value = r;
+          document.getElementById('g').value = g;
+          document.getElementById('b').value = b;
+          mear = (r/255).toFixed(6);
+          meag = (g/255).toFixed(6);
+          meab = (b/255).toFixed(6);
+          document.getElementById('mear').value = mear;
+          document.getElementById('meag').value = meag;
+          document.getElementById('meab').value = meab;
+        }
+        /*
+         * RGB Input Code - updates other fields/colour picker
+         */
+         function reCalcRGB() {
+          r = parseInt(document.getElementById('r').value);
+          g = parseInt(document.getElementById('g').value);
+          b = parseInt(document.getElementById('b').value);
+          rhex = ("00" + r.toString(16)).substr(-2);
+          ghex = ("00" + g.toString(16)).substr(-2);
+          bhex = ("00" + b.toString(16)).substr(-2);
+          hexColor = "#" + rhex + ghex + bhex
+          document.getElementById('hex').value = hexColor;
+          document.getElementById('panel').style.backgroundColor = hexColor;
+          document.getElementById('colorPicker').value = hexColor;
+          document.getElementById('r').value = r;
+          document.getElementById('g').value = g;
+          document.getElementById('b').value = b;
+          mear = (r/255).toFixed(6);
+          meag = (g/255).toFixed(6);
+          meab = (b/255).toFixed(6);
+          document.getElementById('mear').value = mear;
+          document.getElementById('meag').value = meag;
+          document.getElementById('meab').value = meab;
+        }
+        /*
+         * MEA Input Code - updates other fields/colour picker
+         */
+         function reCalcMEA() {
+          mear = document.getElementById('mear').value;
+          meag = document.getElementById('meag').value;
+          meab = document.getElementById('meab').value;
+          r = parseInt((mear*255));
+          g = parseInt((meag*255));
+          b = parseInt((meab*255));
+          document.getElementById('r').value = r;
+          document.getElementById('g').value = g;
+          document.getElementById('b').value = b;
+          rhex = ("00" + r.toString(16)).substr(-2);
+          ghex = ("00" + g.toString(16)).substr(-2);
+          bhex = ("00" + b.toString(16)).substr(-2);
+          hexColor = "#" + rhex + ghex + bhex
+          document.getElementById('hex').value = hexColor;
+          document.getElementById('panel').style.backgroundColor = hexColor;
+          document.getElementById('colorPicker').value = hexColor;
+        }
+      </script>
+    </div>
+  </body>
+</html>
