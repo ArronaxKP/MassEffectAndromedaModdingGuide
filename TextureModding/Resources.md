@@ -79,3 +79,10 @@ Other codes that are worth knowing in the model section:
   * Arm Appearance Preset (colours) - appearancepresetitem/ambappearancepreset_nex_mil_officer_01_tum_armor_legs_221425407
 * Arm Mesh - game/characters/turian/tum/0_armors/tum_arm_a/model/tum_arm_a_arms_model_mesh
   * Arm Appearance Preset (colours) - appearancepresetitem/ambappearancepreset_global_nexus_militia_leader_tum_armor_arms_183776034
+
+### Non Specific NPCs
+
+* Salarians
+  * Nexus Salarian Medial Officer - appearancepresetitem/appearancepreset_nex_rp_sci_sci01_sam_medicalarkinitiative_science_3998112716
+* Turians
+  * Nexus Turian Scientist - appearancepresetitem/appearancepreset_nex_rp_sci_sci03_tum_medicalarkinitiative_1712338085
