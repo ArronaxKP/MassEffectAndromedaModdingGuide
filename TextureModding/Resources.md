@@ -86,3 +86,8 @@ Other codes that are worth knowing in the model section:
   * Nexus Salarian Medial Officer - appearancepresetitem/appearancepreset_nex_rp_sci_sci01_sam_medicalarkinitiative_science_3998112716
 * Turians
   * Nexus Turian Scientist - appearancepresetitem/appearancepreset_nex_rp_sci_sci03_tum_medicalarkinitiative_1712338085
+
+### Compass and Map Icons
+
+* Compass and Mapp Icons are sourced from here - Game/UI/WorldMap/WorldMapAssets_texture
+  * _WARNING, this is the wrong file and does not seem to be used_: Game/UI/HUD/Compass/CompassAssets_texture
